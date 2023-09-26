@@ -40,7 +40,7 @@ public class Cat {
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
-		
+		// draw eyebrows
 		g2.setColor(Color.green);
 		g2.fillOval(x, y - (EYE_HEIGHT-2), EYE_WIDTH * 2, EYE_HEIGHT / 4);
 		x -= EYE_SEPARATION;
@@ -50,6 +50,9 @@ public class Cat {
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
+		// Draw Tongue
+		g2.setColor(Color.red);
+		g2.fillOval(x + MOUTH_WIDTH/2, y + MOUTH_HEIGHT/ 5 * 3, MOUTH_WIDTH/3, MOUTH_HEIGHT/3);
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
