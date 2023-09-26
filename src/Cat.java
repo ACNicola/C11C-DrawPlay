@@ -26,6 +26,10 @@ public class Cat {
 		Graphics2D g2 = (Graphics2D) g;
 		int x=catX;
 		int y=catY;
+		
+		// change background color
+		g2.setColor(Color.cyan);
+		g2.fillRect(0, 0, HEAD_DIMENSION * catX, HEAD_DIMENSION * catY);
 		// Draw the head
 		g2.setColor(Color.white);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
